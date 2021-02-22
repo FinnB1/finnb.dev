@@ -1,0 +1,156 @@
+.fade-in {
+    animation: fadeIn ease 4s;
+    -webkit-animation: fadeIn ease 4s;
+    -moz-animation: fadeIn ease 4s;
+    -o-animation: fadeIn ease 4s;
+    -ms-animation: fadeIn ease 4s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.move-down {
+    animation: moveDown ease 2s, fadeIn ease 3s;
+    -webkit-animation: moveDown ease 2s, fadeIn ease 3s;
+    -moz-animation: moveDown ease 2s, fadeIn ease 3s;
+    -o-animation: moveDown ease 2s, fadeIn ease 3s;
+    -ms-animation: moveDown ease 2s, fadeIn ease 3s;
+}
+@keyframes moveDown {
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-moz-keyframes moveDown {
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-webkit-keyframes moveDown {
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-o-keyframes moveDown {
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-ms-keyframes moveDown {
+    0% {transform: translateY(-5rem);}
+    100% {transform: translateY(0);}
+}
+.move-right {
+    animation: moveRight ease 2s, fadeIn ease 3s;
+    -webkit-animation: moveRight ease 2s, fadeIn ease 3s;
+    -moz-animation: moveRight ease 2s, fadeIn ease 3s;
+    -o-animation: moveRight ease 2s, fadeIn ease 3s;
+    -ms-animation: moveRight ease 2s, fadeIn ease 3s;
+}
+@keyframes moveRight {
+    0% {transform: translateX(-5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-moz-keyframes moveRight {
+    0% {transform: translateX(-5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-webkit-keyframes moveRight {
+    0% {transform: translateX(-5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-o-keyframes moveRight {
+    0% {transform: translateX(-5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-ms-keyframes moveRight {
+    0% {transform: translateX(-5rem);}
+    100% {transform: translateX(0);}
+}
+.move-left {
+    animation: moveLeft ease 2s, fadeIn ease 3s;
+    -webkit-animation: moveLeft ease 2s, fadeIn ease 3s;
+    -moz-animation: moveLeft ease 2s, fadeIn ease 3s;
+    -o-animation: moveLeft ease 2s, fadeIn ease 3s;
+    -ms-animation: moveLeft ease 2s, fadeIn ease 3s;
+}
+@keyframes moveLeft {
+    0% {transform: translateX(5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-moz-keyframes moveLeft {
+    0% {transform: translateX(5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-webkit-keyframes moveLeft {
+    0% {transform: translateX(5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-o-keyframes moveLeft {
+    0% {transform: translateX(5rem);}
+    100% {transform: translateX(0);}
+}
+
+@-ms-keyframes moveLeft {
+    0% {transform: translateX(5rem);}
+    100% {transform: translateX(0);}
+}
+.move-up {
+    animation: moveUp ease 2s, fadeIn ease 3s;
+    -webkit-animation: moveUp ease 2s, fadeIn ease 3s;
+    -moz-animation: moveUp ease 2s, fadeIn ease 3s;
+    -o-animation: moveUp ease 2s, fadeIn ease 3s;
+    -ms-animation: moveUp ease 2s, fadeIn ease 3s;
+}
+@keyframes moveUp {
+    0% {transform: translateY(5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-moz-keyframes moveUp {
+    0% {transform: translateY(5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-webkit-keyframes moveUp {
+    0% {transform: translateY(5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-o-keyframes moveUp {
+    0% {transform: translateY(5rem);}
+    100% {transform: translateY(0);}
+}
+
+@-ms-keyframes moveUp {
+    0% {transform: translateY(5rem);}
+    100% {transform: translateY(0);}
+}

@@ -89,4 +89,20 @@
   color: #282c34;
 }
 
+.accordion-card {
+  background: transparent;
+  border: none;
+}
+.accordion-header {
+  background: transparent;
+  border: none;
+}
+
+
+.info-list {
+  font-size: small;
+}
+
+
+
 
