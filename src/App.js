@@ -12,10 +12,7 @@ export default function App() {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <Details />
-                </Route>
-                <Route path="/p5">
-                    <Slides/>
+                    <Slides />
                 </Route>
             </Switch>
         </Router>
