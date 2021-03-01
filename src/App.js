@@ -1,9 +1,10 @@
 import React from "react";
 import './App.css';
 import './Animations.css';
-import Home from "./Home";
-import P5 from "./P5";
+import Home from "./Components/Home";
+import Slides from "./Components/Slides";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Details from "./Components/Details";
 
 export default function App() {
 
@@ -11,10 +12,10 @@ export default function App() {
         <Router>
             <Switch>
                 <Route exact path="/">
-                    <Home />
+                    <Details />
                 </Route>
                 <Route path="/p5">
-                    <P5/>
+                    <Slides/>
                 </Route>
             </Switch>
         </Router>

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import './App.css';
-import './Animations.css';
-import background from './background.mp4';
+import '../App.css';
+import '../Animations.css';
+import background from '../background.mp4';
 import Button from "react-bootstrap/Button";
 import {FaLinkedinIn, FaGithub, FaRegEnvelope} from "react-icons/fa";
 import {FiPlus, FiMinus} from "react-icons/fi";
@@ -26,12 +26,6 @@ const Home = () => {
     }
 
     return (
-        <div className="video-container">
-            <video autoPlay playsInline muted loop className='video'>
-                <source src={background} type="video/mp4"/>
-            </video>
-            <header>
-
                 <div className="overlay mx-auto">
                     <Col className="column">
                         <h1 className="move-down">
@@ -49,34 +43,11 @@ const Home = () => {
                                 className="mx-2 custom-button move-left">
                             <FaRegEnvelope/>
                         </Button>
-                        <Accordion className="move-up">
-                            <Card className="accordion-card mx-auto mt-5">
-                                <Card.Header className="accordion-header">
-                                    <Accordion.Toggle as={Button} onClick={() => changeIcon()}
-                                                      className="custom-button" eventKey="0">
-                                        About Me {icon}
-                                    </Accordion.Toggle>
-                                </Card.Header>
-                                <Accordion.Collapse eventKey="0">
-                                    <Card.Body>
-                                        <div className="info-list my-2">2nd Year BSc Computer Science - University of
-                                            Warwick
-                                        </div>
-                                        <div className="info-list my-2">A*AAB - Economics, Mathematics, Biology,
-                                            French
-                                        </div>
-                                        <div className="info-list my-2">Java, Python, React, SQL, C</div>
-                                        <div className="info-list my-2">Certified Microsoft Excel Specialist</div>
-                                    </Card.Body>
-                                </Accordion.Collapse>
-                            </Card>
-                        </Accordion>
+                        <div className="move-up info-list my-2">2nd Year CompSci - University of
+                            Warwick
+                        </div>
                     </Col>
-
                 </div>
-
-            </header>
-        </div>
     );
 }
 export default Home;
