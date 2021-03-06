@@ -10,6 +10,7 @@
     "p5": "^1.2.0",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.3",
+    "react-div-100vh": "^0.5.6",
     "react-dom": "^17.0.1",
     "react-icons": "^4.1.0",
     "react-p5-wrapper": "^2.3.0",

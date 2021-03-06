@@ -1,29 +1,13 @@
-import React, {useState} from "react";
+import React from "react";
 import '../App.css';
 import '../Animations.css';
-import background from '../background.mp4';
 import Button from "react-bootstrap/Button";
 import {FaLinkedinIn, FaGithub, FaRegEnvelope} from "react-icons/fa";
-import {FiPlus, FiMinus} from "react-icons/fi";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Accordion from "react-bootstrap/Accordion";
-import Card from "react-bootstrap/Card";
+
 
 const Home = () => {
 
-    const [icon, setIcon] = useState(<FiPlus className="mb-1"/>);
-    const [expanded, setExpanded] = useState(false);
-
-    function changeIcon() {
-        if (expanded) {
-            setIcon(<FiPlus className="mb-1"/>);
-            setExpanded(false);
-        } else {
-            setIcon(<FiMinus className="mb-1"/>);
-            setExpanded(true);
-        }
-    }
 
     return (
                 <div className="overlay mx-auto">

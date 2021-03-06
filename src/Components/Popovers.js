@@ -1,37 +1,51 @@
 import {ListGroup, Popover} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import React from "react";
 import Card from "react-bootstrap/Card";
+import {
+    AiOutlineNodeIndex,
+    FaBootstrap,
+    FaDocker,
+    FaGitAlt,
+    FaJava,
+    FaPython, FaReact,
+    GiAmericanFootballHelmet,
+    GiBeerStein,
+    GiDart,
+    GiWeightLiftingUp, IoLogoJavascript
+} from "react-icons/all";
 
 export const Homebrew = (
     <Popover className="custom-popover mx-3">
-        <Card.Header>Homebrew</Card.Header>
+        <Card.Header>Brewing <GiBeerStein style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
     </Popover>
 );
 export const Gym = (
     <Popover className="custom-popover mx-3">
-        <Card.Header>Gym</Card.Header>
+        <Card.Header>Gym <GiWeightLiftingUp style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
     </Popover>
 );
 export const Darts = (
     <Popover className="custom-popover my-3">
-        <Card.Header>Darts</Card.Header>
+        <Card.Header>UoW Darts <GiDart style={{fontSize: "large", fontWeight: "bold"}} className="ml-1"/></Card.Header>
     </Popover>
 );
 export const AmericanFootball = (
     <Popover className="custom-popover my-3">
-        <Card.Header>American Football</Card.Header>
+        <Card.Header>UoW American Football <GiAmericanFootballHelmet style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
     </Popover>
 );
 export const Languages = (
     <Popover className="custom-popover mx-3">
         <Card.Header>
             <ListGroup variant="flush" className="px-0 mx-0">
-                <ListGroup.Item className="mx-auto my-0 p-0">
-                    Java
+                <ListGroup.Item className="mx-auto my-1 p-0">
+                    Java <FaJava style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
                 </ListGroup.Item>
-                <ListGroup.Item className="my-0 p-0">
-                    Python
+                <ListGroup.Item className="mx-auto mb-1 p-0">
+                    Python <FaPython style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
+                </ListGroup.Item>
+                <ListGroup.Item className="mx-auto p-0">
+                    JS <IoLogoJavascript style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
                 </ListGroup.Item>
             </ListGroup>
         </Card.Header>
@@ -42,10 +56,10 @@ export const Tools = (
         <Card.Header>
             <ListGroup variant="flush" className="px-0 mx-0">
                 <ListGroup.Item className="mx-auto my-0 p-0">
-                    Git
+                    Git <FaGitAlt style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
                 </ListGroup.Item>
                 <ListGroup.Item className="my-0 p-0">
-                    Docker
+                    Docker <FaDocker style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
                 </ListGroup.Item>
             </ListGroup>
         </Card.Header>
@@ -56,10 +70,7 @@ export const Examples = (
         <Card.Header>
             <ListGroup variant="flush" className="px-0 mx-0">
                 <ListGroup.Item className="mx-auto my-0 p-0">
-                    Placeholder
-                </ListGroup.Item>
-                <ListGroup.Item className="my-0 p-0">
-                    Placeholder
+                    Discrete Maths <AiOutlineNodeIndex style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
                 </ListGroup.Item>
             </ListGroup>
         </Card.Header>
@@ -70,10 +81,10 @@ export const LAndF = (
         <Card.Header>
             <ListGroup variant="flush" className="px-0 mx-0">
             <ListGroup.Item className="mx-auto my-0 p-0">
-                React
+                React <FaReact style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
             </ListGroup.Item>
-            <ListGroup.Item className="my-0 p-0">
-                Bootstrap
+            <ListGroup.Item className="mx-auto my-0 p-0">
+                Bootstrap <FaBootstrap style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/>
             </ListGroup.Item>
         </ListGroup></Card.Header>
     </Popover>
