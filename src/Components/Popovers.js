@@ -1,18 +1,11 @@
 import {ListGroup, Popover} from "react-bootstrap";
 import React from "react";
 import Card from "react-bootstrap/Card";
-import {
-    AiOutlineNodeIndex,
-    FaBootstrap,
-    FaDocker,
-    FaGitAlt,
-    FaJava,
-    FaPython, FaReact,
-    GiAmericanFootballHelmet,
-    GiBeerStein,
-    GiDart,
-    GiWeightLiftingUp, IoLogoJavascript
-} from "react-icons/all";
+import {AiOutlineNodeIndex} from "react-icons/ai";
+import {FaBootstrap, FaDocker, FaGitAlt, FaJava, FaPython, FaReact} from "react-icons/fa";
+import { GiAmericanFootballHelmet, GiBeerStein, GiDart, GiWeightLiftingUp } from "react-icons/gi";
+import {IoLogoJavascript} from "react-icons/io";
+
 
 export const Languages = (
     <Popover className="custom-popover mx-3">
