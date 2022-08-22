@@ -38,7 +38,7 @@ const Slides = () => {
                 <source src={background} type="video/mp4"/>
             </video>
             <header>
-        <Carousel
+        {/* {<Carousel
             slide={false}
             nextLabel=""
             prevLabel=""
@@ -47,10 +47,10 @@ const Slides = () => {
             fade
             onSlide={handleSlide}
         >
-            <Carousel.Item>
-                <Home />
-            </Carousel.Item>
-            <Carousel.Item>
+        <Carousel.Item> } */}
+        <Home />
+        {/* {</Carousel.Item>
+        <Carousel.Item>
                 <Details
                     setShow={setShow}
                     show={show}
@@ -61,7 +61,7 @@ const Slides = () => {
                     clickedSecondary={clickedSecondary}
                 />
             </Carousel.Item>
-        </Carousel>
+        </Carousel>} */}
             </header>
         </div>
         </Div100vh>

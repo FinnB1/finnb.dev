@@ -27,8 +27,10 @@ const Home = () => {
                                 className="mx-2 custom-button move-left">
                             <FaRegEnvelope/>
                         </Button>
-                        <div className="move-up info-list my-2">2nd Year CompSci - University of
-                            Warwick
+                        <div className="move-up info-list my-2">4th Year CompSci MEng - University of
+                            Warwick <br />
+                            Software Engineering Intern - Nuance Communications
+                            
                         </div>
                     </Col>
                 </div>

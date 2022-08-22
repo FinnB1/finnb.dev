@@ -14,15 +14,6 @@ const Details = ({show, setShow, showSecondary, setShowSecondary, handleClick, c
                 <div className="overlay mx-auto">
                     <Row xs={1} md={2} className="min-vw-100 min-vh-100 justify-content-center align-items-center">
                         <Col className="my-5 move-down">
-                            <OverlayTrigger show={show} placement="right" overlay={Homebrew}>
-                                <OverlayTrigger show={show} placement="left" overlay={Gym}>
-                                    <OverlayTrigger show={show} placement="top" overlay={Darts}>
-                                        <OverlayTrigger show={show} placement="bottom" trigger="click" overlay={AmericanFootball} onToggle={() => setShow(!show)}>
-                                            <Button onClick={() => handleClick(1)} className={"planet-button p-3 "+ clicked}><FaUmbrellaBeach className="mb-2 mx-2"/></Button>
-                                        </OverlayTrigger>
-                                    </OverlayTrigger>
-                                </OverlayTrigger>
-                            </OverlayTrigger>
                         </Col>
                         <Col className="my-5 move-up">
                             <OverlayTrigger show={showSecondary} placement="right" overlay={Languages}>

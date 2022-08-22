@@ -14,26 +14,6 @@ import {
     GiWeightLiftingUp, IoLogoJavascript
 } from "react-icons/all";
 
-export const Homebrew = (
-    <Popover className="custom-popover mx-3">
-        <Card.Header>Brewing <GiBeerStein style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
-    </Popover>
-);
-export const Gym = (
-    <Popover className="custom-popover mx-3">
-        <Card.Header>Gym <GiWeightLiftingUp style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
-    </Popover>
-);
-export const Darts = (
-    <Popover className="custom-popover my-3">
-        <Card.Header>UoW Darts <GiDart style={{fontSize: "large", fontWeight: "bold"}} className="ml-1"/></Card.Header>
-    </Popover>
-);
-export const AmericanFootball = (
-    <Popover className="custom-popover my-3">
-        <Card.Header>UoW American Football <GiAmericanFootballHelmet style={{fontSize: "large", fontWeight: "bold"}} className="mb-1 ml-1"/></Card.Header>
-    </Popover>
-);
 export const Languages = (
     <Popover className="custom-popover mx-3">
         <Card.Header>

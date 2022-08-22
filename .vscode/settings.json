@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/1b55bb83-6351-45e3-a018-5b8e05afac22/microsoft.web/sites/subscriptions/1b55bb83-6351-45e3-a018-5b8e05afac22/resourceGroups/DefaultResourceGroup-SUK/providers/Microsoft.Web/sites/finnb",
+    "appService.deploySubpath": "."
+}
