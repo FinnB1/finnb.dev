@@ -1,35 +1,33 @@
-import {Carousel} from "react-bootstrap";
 import Home from "./Home";
 import background from "../background.mp4";
-import React, {useState} from "react";
-import Details from "./Details";
+import React from "react";
 import Div100vh from "react-div-100vh";
 
 const Slides = () => {
 
-    const [show, setShow] = useState(false);
-    const [showSecondary, setShowSecondary] = useState(false);
-    const [clicked, setClicked] = useState("");
-    const [clickedSecondary, setClickedSecondary] = useState("");
+    //const [show, setShow] = useState(false);
+    //const [showSecondary, setShowSecondary] = useState(false);
+    // const [clicked, setClicked] = useState("");
+    // const [clickedSecondary, setClickedSecondary] = useState("");
 
-    function handleClick(id) {
-        console.log("CLICKED  "+id);
-        if (id === 1)
-            if (clicked === "")
-                setClicked("planet-button-clicked");
-            else setClicked("");
-        else
-        if (clickedSecondary === "")
-            setClickedSecondary("planet-button-clicked");
-        else setClickedSecondary("");
-    }
+    // function handleClick(id) {
+    //     console.log("CLICKED  "+id);
+    //     if (id === 1)
+    //         if (clicked === "")
+    //             setClicked("planet-button-clicked");
+    //         else setClicked("");
+    //     else
+    //     if (clickedSecondary === "")
+    //         setClickedSecondary("planet-button-clicked");
+    //     else setClickedSecondary("");
+    // }
 
-    function handleSlide() {
-        setShow(false);
-        setShowSecondary(false);
-        setClicked("")
-        setClickedSecondary("");
-    }
+    // function handleSlide() {
+    //     setShow(false);
+    //     setShowSecondary(false);
+    //     setClicked("")
+    //     setClickedSecondary("");
+    // }
 
     return (
         <Div100vh>

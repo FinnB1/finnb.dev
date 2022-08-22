@@ -3,7 +3,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import {AiOutlineNodeIndex} from "react-icons/ai";
 import {FaBootstrap, FaDocker, FaGitAlt, FaJava, FaPython, FaReact} from "react-icons/fa";
-import { GiAmericanFootballHelmet, GiBeerStein, GiDart, GiWeightLiftingUp } from "react-icons/gi";
+// import { GiAmericanFootballHelmet, GiBeerStein, GiDart, GiWeightLiftingUp } from "react-icons/gi";
 import {IoLogoJavascript} from "react-icons/io";
 
 

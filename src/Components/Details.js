@@ -2,13 +2,13 @@ import React from "react";
 import '../App.css';
 import '../Animations.css';
 import Button from "react-bootstrap/Button";
-import {FaTools, FaUmbrellaBeach} from "react-icons/fa";
+import {FaTools} from "react-icons/fa";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import {OverlayTrigger} from "react-bootstrap";
-import {AmericanFootball, Darts, Examples, Gym, Homebrew, LAndF, Languages, Tools} from "./Popovers";
+import {Examples, LAndF, Languages, Tools} from "./Popovers";
 
-const Details = ({show, setShow, showSecondary, setShowSecondary, handleClick, clicked, clickedSecondary}) => {
+const Details = ({showSecondary, setShowSecondary, handleClick, clickedSecondary}) => {
 
     return (
                 <div className="overlay mx-auto">
