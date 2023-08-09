@@ -2,6 +2,7 @@ import React from "react";
 import './App.css';
 import './Animations.css';
 import Slides from "./Components/Slides";
+import Login from "./Components/Login";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
@@ -11,6 +12,9 @@ export default function App() {
             <Switch>
                 <Route exact path="/">
                     <Slides />
+                </Route>
+                <Route exact path="/login">
+                    <Login />
                 </Route>
             </Switch>
         </Router>

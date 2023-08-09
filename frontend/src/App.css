@@ -36,6 +36,16 @@
   outline: none;
   border: none;
 }
+.custom-input {
+  background: none !important;
+  outline: white;
+  color: white !important;
+}
+.custom-input:focus:active {
+  background: none !important;
+  outline: white;
+  color: white;
+}
 .custom-button:hover {
   background-color: white;
   color: #282c34;
