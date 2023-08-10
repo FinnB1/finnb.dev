@@ -7,14 +7,6 @@ import {Carousel} from "react-bootstrap";
 
 const Slides = () => {
 
-    const [clicked, setClicked] = useState("");
-    const [clickedSecondary, setClickedSecondary] = useState("");
-
-    function handleSlide() {
-        setClicked("")
-        setClickedSecondary("");
-    }
-
     return (
         <Div100vh>
         <div className="video-container">
@@ -29,7 +21,6 @@ const Slides = () => {
             className="slides"
             interval={null}
             fade
-            onSlide={handleSlide}
             >
         <Carousel.Item>
         <Home />
