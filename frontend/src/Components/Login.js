@@ -1,7 +1,7 @@
 import React from "react";
 import '../App.css';
 import '../Animations.css';
-import {Form, Button, Col} from "react-bootstrap";
+import {Form, Button} from "react-bootstrap";
 import {FaLock} from "react-icons/fa";
 
 
