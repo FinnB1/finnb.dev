@@ -7,25 +7,10 @@ import {Carousel} from "react-bootstrap";
 
 const Slides = () => {
 
-    const [show, setShow] = useState(false);
-    const [showSecondary, setShowSecondary] = useState(false);
     const [clicked, setClicked] = useState("");
     const [clickedSecondary, setClickedSecondary] = useState("");
 
-    function handleClick(id) {
-        if (id === 1)
-            if (clicked === "")
-                setClicked("planet-button-clicked");
-            else setClicked("");
-        else
-        if (clickedSecondary === "")
-            setClickedSecondary("planet-button-clicked");
-        else setClickedSecondary("");
-    }
-
     function handleSlide() {
-        setShow(false);
-        setShowSecondary(false);
         setClicked("")
         setClickedSecondary("");
     }
