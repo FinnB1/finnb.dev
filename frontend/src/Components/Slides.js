@@ -1,6 +1,6 @@
 import Home from "./Home";
 import background from "../background.mp4";
-import {React, useState} from "react";
+import {React} from "react";
 import Div100vh from "react-div-100vh";
 import Login from "./Login";
 import {Carousel} from "react-bootstrap";
