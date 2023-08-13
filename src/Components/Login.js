@@ -3,25 +3,16 @@ import '../App.css';
 import '../Animations.css';
 import {Form, Button} from "react-bootstrap";
 import {FaLock} from "react-icons/fa";
+import { sha256 } from 'js-sha256';
+import Tools from "./Tools.js";
 
 
-const Login = () => {
+const Login = ({setActive}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://127.0.0.1:5000/login', {
-            method: "POST",
-            mode: "cors",
-            headers: {
-                "Content-Type": "application/json",
-              },
-            body: JSON.stringify({
-                "password": e.target[0].value,
-            })
-        })
-            .then(response => {
-                console.log(response);
-            });
+        if (sha256(e.target[0].value) === '39cb7acc3d41c9431aa818ca6938f388a1283dc4a006e6a3bf1eca6ab931415a')
+            setActive(<Tools />)
     }
 
     return (

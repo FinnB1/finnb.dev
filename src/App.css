@@ -36,6 +36,11 @@
   outline: none;
   border: none;
 }
+.custom-card {
+  background: none;
+  color: white !important;
+  border: 1px white solid;
+}
 .custom-input {
   background: none !important;
   outline: white;

@@ -1,11 +1,17 @@
 import Home from "./Home";
 import background from "../background.mp4";
-import {React} from "react";
+import {React, useState, useEffect} from "react";
 import Div100vh from "react-div-100vh";
 import Login from "./Login";
 import {Carousel} from "react-bootstrap";
 
 const Slides = () => {
+
+    const [activeComponent, setActiveComponent] = useState();
+
+    useEffect(() => {
+        setActiveComponent(<Login setActive={setActiveComponent}/>);
+    }, [])
 
     return (
         <Div100vh>
@@ -26,7 +32,7 @@ const Slides = () => {
         <Home />
         </Carousel.Item>
         <Carousel.Item>
-                <Login/>
+                {activeComponent}
             </Carousel.Item>
         </Carousel>
             </header>
