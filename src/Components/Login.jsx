@@ -4,7 +4,7 @@ import '../Animations.css';
 import {Form, Button} from "react-bootstrap";
 import {FaLock} from "react-icons/fa";
 import { sha256 } from 'js-sha256';
-import Tools from "./Tools.js";
+import Tools from "./Tools";
 
 
 const Login = ({setActive}) => {

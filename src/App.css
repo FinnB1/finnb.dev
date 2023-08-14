@@ -32,38 +32,38 @@
   text-align: center;
 }
 .custom-button {
-  background: none;
-  outline: none;
-  border: none;
+  background: none !important;
+  outline: none !important;
+  border: none !important;
 }
 .custom-card {
-  background: none;
+  background: none !important;
   color: white !important;
-  border: 1px white solid;
+  border: 1px white solid !important;
 }
 .custom-input {
   background: none !important;
-  outline: white;
+  outline: white !important;
   color: white !important;
 }
 .custom-input:focus:active {
   background: none !important;
-  outline: white;
-  color: white;
+  outline: white!important;
+  color: white !important;
 }
 .custom-button:hover {
-  background-color: white;
-  color: #282c34;
+  background-color: white !important;
+  color: #282c34 !important
 }
 .custom-button:focus {
-  outline: none;
-  box-shadow: none;
-  background-color: transparent;
-  color:white;
+  outline: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color:white !important;
 }
 .custom-button:focus:hover {
-  background-color: white;
-  color: #282c34;
+  background-color: white !important;
+  color: #282c34 !important;
 }
 
 .accordion-card {
@@ -77,7 +77,7 @@
 
 
 .info-list {
-  font-size: small;
+  font-size: medium !important;
 }
 .custom-canvas {
   overflow: hidden !important;

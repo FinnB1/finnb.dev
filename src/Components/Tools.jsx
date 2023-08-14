@@ -13,26 +13,22 @@ const Tools = () => {
                     </div>
                     <div>
                     <Accordion>
-                    <Card className="custom-card">
-                        <Card.Header>
-                        <Accordion.Toggle as={Button} className="custom-button" eventKey="0">
+                    <Accordion.Item className="custom-card" eventKey="0">
+                        <Accordion.Header>
                             Coming soon...
-                        </Accordion.Toggle>
-                        </Card.Header>
+                        </Accordion.Header>
                         <Accordion.Collapse eventKey="0">
-                        <Card.Body>Hello! I'm the body</Card.Body>
+                        <Accordion.Body>Hello! I'm the body</Accordion.Body>
                         </Accordion.Collapse>
-                    </Card>
-                    <Card className="custom-card">
-                        <Card.Header>
-                        <Accordion.Toggle as={Button} className="custom-button" eventKey="1">
+                    </Accordion.Item>
+                    <Accordion.Item className="custom-card" eventKey="1">
+                        <Accordion.Header>
                         Coming soon...
-                        </Accordion.Toggle>
-                        </Card.Header>
+                        </Accordion.Header>
                         <Accordion.Collapse eventKey="1">
-                        <Card.Body>Hello! I'm another body</Card.Body>
+                        <Accordion.Body>Hello! I'm another body</Accordion.Body>
                         </Accordion.Collapse>
-                    </Card>
+                    </Accordion.Item>
                     </Accordion>
                     </div>
                 </div>
