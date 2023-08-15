@@ -23,7 +23,7 @@ const Home = () => {
                                 className="mx-2 custom-button fade-in">
                             <FaLinkedinIn/>
                         </Button>
-                        <Button onClick={() => window.open("mailto:finn.butler@warwick.ac.uk", "_blank")}
+                        <Button onClick={() => window.open("mailto:finnbutler1@gmail.com", "_blank")}
                                 className="mx-2 custom-button move-left">
                             <FaRegEnvelope/>
                         </Button>
