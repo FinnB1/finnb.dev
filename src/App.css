@@ -14,7 +14,7 @@
   flex-direction: row;
 }
 
-.video {
+.bg {
   object-fit: cover;
   position: fixed;
   min-width: 100%;

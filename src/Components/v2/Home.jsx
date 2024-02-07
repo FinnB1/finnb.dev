@@ -1,24 +1,15 @@
-import {React, lazy, Suspense} from "react";
+import React from "react";
 import '../App.css';
 import '../Animations.css';
 import Button from "react-bootstrap/Button";
 import {FaLinkedinIn, FaGithub, FaRegEnvelope} from "react-icons/fa";
 import Col from "react-bootstrap/Col";
-import Div100vh from "react-div-100vh";
-import StaticBackground from "./StaticBackground";
 
 
 const Home = () => {
-    const Background = lazy(() => import('./Background'));
+
 
     return (
-
-        <Div100vh>
-        <div className="video-container">
-            <Suspense fallback={<StaticBackground />}>
-            <Background />
-                </Suspense>
-            <header>
                 <div className="overlay mx-auto">
                     <Col className="column">
                         <h1 className="move-down">
@@ -43,9 +34,6 @@ const Home = () => {
                         </div>
                     </Col>
                 </div>
-            </header>
-        </div>
-        </Div100vh>
     );
 }
 export default Home;
