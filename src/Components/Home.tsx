@@ -1,18 +1,16 @@
-import {React, lazy, Suspense} from "react";
+import {lazy, Suspense} from "react"
 import '../App.css';
 import '../Animations.css';
 import Button from "react-bootstrap/Button";
 import {FaLinkedinIn, FaGithub, FaRegEnvelope} from "react-icons/fa";
 import Col from "react-bootstrap/Col";
 import Div100vh from "react-div-100vh";
-import StaticBackground from "./StaticBackground";
+import StaticBackground from "./StaticBackground.tsx";
 
 
 const Home = () => {
-    const Background = lazy(() => import('./Background'));
-
+    const Background = lazy(() => import('./Background.tsx'));
     return (
-
         <Div100vh>
         <div className="video-container">
             <Suspense fallback={<StaticBackground />}>
@@ -46,6 +44,7 @@ const Home = () => {
             </header>
         </div>
         </Div100vh>
-    );
-}
-export default Home;
+    )
+  }
+  
+  export default Home;
