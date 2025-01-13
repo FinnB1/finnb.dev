@@ -38,7 +38,7 @@ const Home = () => {
                         </Button>
                         <div className="move-up info-list my-2">MEng Computer Science - University of
                             Warwick <br />
-                            Software Engineer - Microsoft UK
+                            Software Engineer - Microsoft
                             
                         </div>
                     </Col>
