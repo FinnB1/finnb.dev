@@ -2,6 +2,8 @@ import './App.css'
 import './Animations.css';
 import Home from "./Components/Home.tsx";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
+import GPT from "./Components/GPT.tsx";
+import Tube from './Components/Tube.tsx';
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/login" element={<Login />} /> */}
+        <Route path="/tube" element={<Tube />} />
       </Routes>
     </BrowserRouter>
   )
