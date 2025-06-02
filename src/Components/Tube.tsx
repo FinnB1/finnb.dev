@@ -40,7 +40,7 @@ const Tube: React.FC = () => {
     return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh', backgroundColor: '#f5f5f5', padding: '20px', flexDirection: 'column', textAlign: 'center'
          }}>
-            <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>Nine Elms Departures</h1>
+            <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px', color: '#333' }}>Nine Elms Live Departures</h1>
             <div style={{ width: '80%', maxWidth: '600px', backgroundColor: '#ffffff', borderRadius: '8px', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', overflow: 'hidden' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                     <thead>
@@ -50,16 +50,24 @@ const Tube: React.FC = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {liveDepartures.map((departure, index) => (
-                            <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : '#ffffff' }}>
-                                <td style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>{departure.destinationName}</td>
-                                <td style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>
-                                    <span title={`${departure.timeToStation} seconds`}>
-                                        {Math.floor(departure.timeToStation / 60)}
-                                    </span>
+                        {liveDepartures.length === 0 ? (
+                            <tr>
+                                <td colSpan={2} style={{ padding: '12px', textAlign: 'center', color: '#666' }}>
+                                    No departures available at the moment.
                                 </td>
                             </tr>
-                        ))}
+                        ) : (
+                            liveDepartures.map((departure, index) => (
+                                <tr key={index} style={{ backgroundColor: index % 2 === 0 ? '#f9f9f9' : '#ffffff', textAlign: 'left' }}>
+                                    <td style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>{departure.destinationName.replace(/ Underground Station$/, '')}</td>
+                                    <td style={{ padding: '12px', borderBottom: '1px solid #ddd' }}>
+                                        <span title={`${departure.timeToStation} seconds`}>
+                                            {Math.floor(departure.timeToStation / 60)}
+                                        </span>
+                                    </td>
+                                </tr>
+                            ))
+                        )}
                     </tbody>
                 </table>
             </div>
